@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="nhap1">
+<input type="text" id="nhap2"></br>
+<input type="button" value="a^2" onclick="X()">
+<input type="button" value="a^b" onclick="Z()">
+<p id="ketQua1"></p>
+<p id="ketQua2"></p>
+<script>
+    function X() {
+        let a = document.getElementById('nhap1').value;
+        document.getElementById('ketQua1').innerText = ' a^2 = ' + a ** 2;
+    }
+
+    function Z() {
+        let a = document.getElementById('nhap1').value;
+        let b = document.getElementById('nhap2').value;
+        document.getElementById('ketQua2').innerText = ' a^b = ' + Math.pow(a, b);
+    }
+</script>
+
+</body>
+</html>

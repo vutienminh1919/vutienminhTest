@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="nhapCanh1">
+<input type="text" id="nhapCanh2">
+<input type="text" id="nhapCanh3">
+<input type="button" value="CHECK" onclick="check()">
+<p id="kq1"></p>
+<p id="kq2"></p>
+<p id="kq3"></p>
+<p id="kq4"></p>
+<script>
+    function check() {
+        let a = parseInt(document.getElementById('nhapCanh1').value)
+        let b = parseInt(document.getElementById('nhapCanh2').value)
+        let c = parseInt(document.getElementById('nhapCanh3').value)
+        if (a + b > c && a + c > b && b + c > a) {
+            if (a == b && b == c) {
+                document.getElementById('kq1').innerText = ' Tam giác đều';}
+            else if (a==b||b==c||c==a){
+                document.getElementById('kq1').innerText = ' Tam giác cân';
+            }
+
+        }else {
+
+
+        }
+
+    }
+
+</script>
+
+</body>
+</html>

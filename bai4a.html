@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="dauVao"></br>
+<input id="chuVi" type="button" onclick="P()" value="tính P">
+<input id="dienTich" type="button" onclick="S()" value="tính S">
+<p id="ketQuaS"></p>
+<p id="ketQuaP"></p>
+<script>
+    function S() {
+        let a = document.getElementById('dauVao').value;
+        document.getElementById('ketQuaS').innerText = 'Diện tích = ' + a ** 2
+    }
+    function P() {
+        let a = document.getElementById('dauVao').value;
+        document.getElementById('ketQuaP').innerText = 'Chu vi = ' + a * 2
+    }
+
+</script>
+
+</body>
+</html>
